@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>StayFlyGo</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#search">Search</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#flights">Flights</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Our StayFlyGo</h1>
+    </header>
+    <main>
+        <section id="search">
+            <h2>Search for Available Rooms, Flights, and Cars</h2>
+            <form>
+                <label for="search-input">Search for:</label>
+                <select id="search-input" class="select-input">
+                    <option value="rooms">Rooms</option>
+                    <option value="flights">Flights</option>
+                    <option value="cars">Cars</option>
+                </select>
+        
+                <label for="check-in-date">Check-In Date:</label>
+                <input type="date" id="check-in-date" class="date-input" required>
+        
+                <label for="check-out-date">Check-Out Date:</label>
+                <input type="date" id="check-out-date" class="date-input" required>
+        
+                <button id="search-button" class="book-button">Search</button>
+            </form>
+            <section id="results">
+                <h3>Search Results</h3>
+                <ul id="results-list" class="results-list">
+                    <!-- Results will be displayed here -->
+                </ul>
+            </section>
+        </section>
+        
+        
+        </section>
+       <!-- Rooms Section -->
+        <section id="rooms">
+            <h2>Room Booking</h2>
+            <p>Discover comfortable and well-appointed rooms for your stay. Whether you're planning a weekend getaway or a business trip, we have a variety of room types to meet your needs.</p>
+            <ul class="room-list">
+                <li>
+                    <h3>Standard Room</h3>
+                    <p>Enjoy a cozy standard room with a comfortable bed and basic amenities. Perfect for a budget-friendly stay.</p>
+                    <p>Price: $80 per night</p>
+                    <button class="book-button">Book Now</button>
+                </li>
+                <li>
+                    <h3>Deluxe Room</h3>
+                    <p>Upgrade to a spacious deluxe room with modern furnishings and a stunning view. Ideal for a more luxurious experience.</p>
+                    <p>Price: $120 per night</p>
+                    <button class="book-button">Book Now</button>
+                </li>
+                <li>
+                    <h3>Suite</h3>
+                    <p>Indulge in our exquisite suite, featuring a separate living area and premium amenities. Perfect for special occasions.</p>
+                    <p>Price: $200 per night</p>
+                    <button class="book-button">Book Now</button>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Flights Section -->
+        <section id="flights">
+            <h2>Flight Booking</h2>
+            <p>Embark on your next adventure with our flight booking service. Whether you're planning a business trip or a dream vacation, we've got your travel needs covered. Search for and book the perfect flight for your journey.</p>
+            <form>
+                <label for="flight-search-input">Search for Flights:</label>
+                <input type="text" id="flight-search-input" class="search-input" placeholder="Enter departure, destination, or dates">
+                <button id="flight-search-button" class="book-button">Search Flights</button>
+            </form>
+            <section id="flight-results">
+                <h3>Flight Search Results</h3>
+                <ul id="flight-results-list" class="results-list">
+                    <li>
+                        <h3>Flight to Paris</h3>
+                        <p>Departure: New York</p>
+                        <p>Destination: Paris</p>
+                        <p>Date: July 15, 2023</p>
+                        <p>Price: $500</p>
+                        <button class="book-button">Book Now</button>
+                    </li>
+                    <li>
+                        <h3>Flight to Tokyo</h3>
+                        <p>Departure: Los Angeles</p>
+                        <p>Destination: Tokyo</p>
+                        <p>Date: August 10, 2023</p>
+                        <p>Price: $800</p>
+                        <button class="book-button">Book Now</button>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- Cars Section -->
+        <section id="cars">
+            <h2>Car Booking</h2>
+            <p>Hit the road with our car booking service. Whether you need a compact car for a city adventure or an SUV for a family road trip, we offer a wide selection of vehicles to suit your travel plans.</p>
+            <form>
+                <label for="car-search-input">Search for Cars:</label>
+                <input type="text" id="car-search-input" class="search-input" placeholder="Enter location, pickup, or return dates">
+                <button id="car-search-button" class="book-button">Search Cars</button>
+            </form>
+            <section id="car-results">
+                <h3>Car Search Results</h3>
+                <ul id="car-results-list" class="results-list">
+                    <li>
+                        <h3>Economy Car</h3>
+                        <p>Type: Compact</p>
+                        <p>Seats: 4</p>
+                        <p>Price per Day: $40</p>
+                        <button class="book-button">Book Now</button>
+                    </li>
+                    <li>
+                        <h3>SUV</h3>
+                        <p>Type: Sport Utility Vehicle</p>
+                        <p>Seats: 7</p>
+                        <p>Price per Day: $80</p>
+                        <button class="book-button">Book Now</button>
+                    </li>
+                </ul>
+            </section>
+        </section>
+
+        <!-- About Us Section -->
+<section id="about">
+    <h2>About StayFlyGo</h2>
+    <p>Welcome to StayFlyGo, your gateway to exceptional travel experiences! We are dedicated to providing you with a home away from home, offering a wide selection of comfortable and well-appointed rooms for your stay. Whether you're embarking on a business trip or seeking leisurely adventures, we have the perfect room to meet your unique needs.</p><br>
+    <p>At StayFlyGo, we take pride in offering more than just a place to rest your head. Our rooms are thoughtfully designed and equipped with modern amenities to ensure your stay is not only comfortable but truly enjoyable. Our friendly and attentive staff is always ready to assist you, making sure your visit is filled with memorable moments.</p><br>
+    <p>When you choose StayFlyGo, you're not just booking a room; you're unlocking an opportunity to explore nearby attractions and immerse yourself in local culture. We are committed to making your visit both memorable and convenient, providing you with the ideal starting point to explore your destination's wonders. So, why wait? Book with us today and discover the perfect room that will be the heart of your unforgettable journey.</p>
+</section>
+
+        <!-- Your Profile Section -->
+        <section id="profile">
+            <h2>Your Profile</h2>
+            <p>Welcome, [User's Name]! Here you can manage your bookings and update your profile information. Take advantage of our user-friendly platform to track your reservations and personalize your profile.</p>
+            <p>Features for your profile management:</p><br>
+            <ul>
+                <li>Edit your personal information, including contact details.</li>
+                <li>View your booking history and upcoming reservations.</li>
+                <li>Modify or cancel existing bookings.</li>
+                <li>Update your preferences for a more tailored experience.</li>
+            </ul>
+            <button class="profile-button" id="edit-profile-button">Edit Profile</button>
+            <button class="profile-button" id="view-bookings-button">View Bookings</button>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, feel free to contact our support team. Our dedicated support staff is available to help you with any inquiries or issues you may encounter during your stay.</p>
+            <p>Contact Details:</p>
+            <ul>
+                <li>Email: <a href="mailto:support@StayFlyGo.com">support@StayFlyGo.com</a></li>
+                <li>Phone: <a href="tel:123-456-7890">123-456-7890</a></li>
+                <li>Address: 123 Booking St, Cityville, Country</li>
+            </ul>
+            <p>We value your feedback and strive to provide the best service possible. Don't hesitate to reach out to us; we're here to assist you.</p>
+        
+            <!-- Contact Form -->
+            <h3>Contact Form</h3>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+        
+                <button type="submit" id="submit-button">Submit</button>
+            </form>
+        
+            <!-- Social Media Links -->
+            <h3>Connect with Us</h3>
+            <ul class="social-media-links">
+                <li><a href="https://www.facebook.com/StayFlyGo" target="_blank">Facebook</a></li>
+                <li><a href="https://www.twitter.com/StayFlyGo" target="_blank">Twitter</a></li>
+                <li><a href="https://www.instagram.com/StayFlyGo" target="_blank">Instagram</a></li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 StayFlyGo. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
